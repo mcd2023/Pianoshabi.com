@@ -1,7 +1,8 @@
-// Scroll animation (fade-in sections)
+// Sadece görsel animasyon (bozma riski yok)
+
 const sections = document.querySelectorAll("section");
 
-function revealSections() {
+function reveal() {
   const trigger = window.innerHeight * 0.85;
 
   sections.forEach(section => {
@@ -13,9 +14,9 @@ function revealSections() {
   });
 }
 
-// run on scroll
-window.addEventListener("scroll", revealSections);
-revealSections();
+// CSS ile birlikte soft animation
+window.addEventListener("scroll", reveal);
+reveal();
 
-// debug log
-console.log("PianoShabi site loaded 🎹");
+// debug
+console.log("PianoShabi landing page loaded 🎹");
