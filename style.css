@@ -6,6 +6,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 20px;
 }
 
 /* =========================
@@ -24,7 +25,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 60px;
+  padding: 50px 60px;
   background: rgba(0,0,0,0.6);
   backdrop-filter: blur(10px);
 }
@@ -32,6 +33,7 @@ header {
 .logo {
   font-weight: 600;
   letter-spacing: 2px;
+  height:40px;
 }
 
 .nav {
@@ -92,16 +94,9 @@ header {
   transform: scale(1.05);
 }
 
-section {
-  
-  margin-bottom: 80px;
-}
 
-/* =========================
-   HERO
-========================= */
 .hero {
-  height: 100vh;
+  
   background: url("piano.jpg") center/cover no-repeat;
   display: flex;
   justify-content: center;
@@ -138,11 +133,71 @@ section {
   opacity: 0.8;
 }
 
-/* =========================
-   FEATURES SECTION (2. BODY BURAYA TAŞINDI)
-========================= */
+.hero {
+  background-image: url("assets/hero.jpg"); /* Arka plan resmi */
+  background-size: cover;       /* Resmi alanı kaplayacak şekilde ölçekler */
+  background-position: center;  /* Ortalar */
+  background-repeat: no-repeat; /* Tekrar etmez */
+  color: white;                 /* Yazılar resim üzerinde okunaklı olsun */
+  padding: 100px 20px;          /* İç boşluk */
+}
+
+.about {
+  color : black !important;
+  background-image: url("assets/about.jpg"); /* Arka plan resmi */  
+  background-size: cover;       /* Resmi alanı kaplayacak şekilde ölçekler */
+  background-position: center;  /* Ortalar */
+  background-repeat: no-repeat; /* Tekrar etmez */
+  color: white;                 /* Yazılar resim üzerinde okunaklı olsun */
+  padding: 150px 20px;          /* İç boşluk */
+}
+
+.about-text {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 15px;
+}
+
+.lessons {
+  background-image: url("assets/lessons.jpg"); /* Arka plan resmi */  
+  background-size: cover;       /* Resmi alanı kaplayacak şekilde ölçekler */
+  background-position: center;  /* Ortalar */
+  background-repeat: no-repeat; /* Tekrar etmez */
+  color: white;                 /* Yazılar resim üzerinde okunaklı olsun */
+  padding: 100px 20px;          /* İç boşluk */
+}
+
+
+.pricing {
+  background-image: url("assets/pricing.jpg"); /* Arka plan resmi */  
+  background-size: cover;       /* Resmi alanı kaplayacak şekilde ölçekler */
+  background-position: center;  /* Ortalar */
+  background-repeat: no-repeat; /* Tekrar etmez */
+  color: white;                 /* Yazılar resim üzerinde okunaklı olsun */
+  padding: 100px 20px;          /* İç boşluk */
+
+}
+
+
+.comment {
+  background-color: #ffffff !important; /* Beyaz arka plan */
+  color : white;
+}
+
+.social-media {
+  background-image: url("assets/social-media.jpg"); /* Arka plan resmi */
+  background-size: cover;       /* Resmi alanı kaplayacak şekilde ölçekler */
+  background-position: center;  /* Ortalar */
+  background-repeat: no-repeat; /* Tekrar etmez */
+  color: white;                 /* Yazılar resim üzerinde okunaklı olsun */
+  padding: 100px 20px;          /* İç boşluk */
+ 
+}
+
+
 .features-section {
-  padding: 60px 20px;
+  padding: 150px 20px;
   background-color: #f9f7f4;
   color: #1a1a1a;
 }
@@ -172,9 +227,7 @@ section {
   background-color: #d1d1d1;
 }
 
-/* =========================
-   CARDS
-========================= */
+
 .cards {
   display: flex;
   justify-content: center;
@@ -183,7 +236,7 @@ section {
 }
 
 .card {
-  background: #1a1a1f;
+  background: #c8a97e;
   padding: 25px;
   border-radius: 15px;
   width: 220px;
@@ -235,5 +288,73 @@ footer {
 
   .feature-item:not(:last-child)::after {
     display: none;
+  }
+}
+.comment {
+  padding: 80px 20px;
+  background: #0f0f12;
+  color: black;
+  text-align: center;
+}
+
+.comment h2 {
+  font-size: 26px;
+  margin-bottom: 50px;
+}
+
+/* 🔥 3 KOLON YAPI */
+.comments-container {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
+  text-align: left;
+}
+
+/* COMMENT ITEM */
+.comment-item {
+  padding-left: 15px;
+  border-left: 2px solid rgba(255,255,255,0.15);
+  transition: 0.3s ease;
+}
+
+.comment-item:hover {
+  border-left-color: #fff;
+  transform: translateY(-5px);
+}
+
+/* stars */
+.stars {
+  color: gold;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+
+/* text */
+.comment-item p {
+  margin: 4px 0;
+  font-size: 14px;
+  opacity: 0.85;
+  line-height: 1.6;
+}
+
+/* name */
+.comment-item span {
+  display: block;
+  margin-top: 10px;
+  font-size: 13px;
+  opacity: 0.6;
+}
+
+@media (max-width: 900px) {
+  .comments-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .comments-container {
+    grid-template-columns: 1fr;
   }
 }
