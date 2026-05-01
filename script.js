@@ -1,72 +1,72 @@
-
-// =====================
-// 🌍 LANGUAGE SYSTEM
-// =====================
-
 const texts = {
   en: {
     heroTitle: "Private Piano Lessons in Tel Aviv 🎹",
-    heroDesc: "Learn piano step by step with a professional private teacher.",
+    heroDesc: "Learn piano step by step with a professional teacher.",
     heroSub: "✔ 10+ years experience • ✔ All ages • ✔ Beginner friendly",
+
     whyTitle: "Why PianoShabi?",
+    why1: "✔ One-on-one private lessons",
+    why2: "✔ Fast structured learning",
+    why3: "✔ Online & in-person lessons",
+    why4: "✔ Flexible schedule",
+
+    videoTitle: "Watch a Sample Lesson 🎥",
+
     locTitle: "Location",
     locText1: "📍 Tel Aviv – Israel",
     locText2: "Private home or online lessons available",
+
     ctaTitle: "Start Your Piano Journey Today 🎹",
-    ctaDesc: "Send a message on WhatsApp. Response within 1 hour."
+    ctaDesc: "Send a message on WhatsApp",
+
+    wa: "https://wa.me/972523726062"
   },
 
   he: {
     heroTitle: "שיעורי פסנתר פרטיים בתל אביב 🎹",
     heroDesc: "למד פסנתר צעד אחר צעד עם מורה מקצועי.",
     heroSub: "✔ ניסיון מעל 10 שנים • ✔ לכל הגילאים • ✔ מתאים למתחילים",
+
     whyTitle: "למה PianoShabi?",
+    why1: "✔ שיעורים פרטיים אחד על אחד",
+    why2: "✔ למידה מהירה ומובנית",
+    why3: "✔ אונליין ובפרונטלי",
+    why4: "✔ לוח זמנים גמיש",
+
+    videoTitle: "צפה בשיעור לדוגמה 🎥",
+
     locTitle: "מיקום",
     locText1: "📍 תל אביב – ישראל",
     locText2: "שיעורים בבית או אונליין",
-    ctaTitle: "התחל את המסע שלך בפסנתר 🎹",
-    ctaDesc: "שלח הודעה בוואטסאפ. מענה תוך שעה."
+
+    ctaTitle: "התחל את המסע שלך 🎹",
+    ctaDesc: "שלח הודעה בוואטסאפ",
+
+    wa: "https://wa.me/972523726062"
   }
 };
 
-function setLang(lang){
+function setTextMode(lang) {
   const t = texts[lang];
 
-  for (let key in t){
-    const el = document.getElementById(key);
-    if(el) el.innerText = t[key];
-  }
+  document.querySelectorAll("[data-key]").forEach(el => {
+    const key = el.dataset.key;
+    if (t[key]) el.innerText = t[key];
+  });
 
-  // RTL fix
-  document.body.style.direction = (lang === "he") ? "rtl" : "ltr";
-  document.body.style.textAlign = (lang === "he") ? "right" : "left";
+  document.getElementById("whatsappBtn").href = t.wa;
+  document.getElementById("ctaBtn").href = t.wa;
+
+  document.body.style.direction = lang === "he" ? "rtl" : "ltr";
+  document.body.style.textAlign = lang === "he" ? "right" : "left";
 
   localStorage.setItem("lang", lang);
 }
 
-// default
-setLang(localStorage.getItem("lang") || "en");
-
-
-// =====================
-// 🎬 SCROLL ANIMATION
-// =====================
-
-const sections = document.querySelectorAll("section");
-
-function reveal() {
-  const trigger = window.innerHeight * 0.85;
-
-  sections.forEach(section => {
-    const top = section.getBoundingClientRect().top;
-
-    if (top < trigger) {
-      section.classList.add("show");
-    }
-  });
+/* alias for HTML buttons */
+function setLang(lang) {
+  setTextMode(lang);
 }
 
-window.addEventListener("scroll", reveal);
-reveal();
-
-console.log("PianoShabi landing page loaded 🎹");
+/* default */
+setLang(localStorage.getItem("lang") || "en");

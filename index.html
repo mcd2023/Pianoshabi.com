@@ -6,72 +6,69 @@
   <title>PianoShabi | Piano Lessons Tel Aviv</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <button onclick="setLang('en')">EN</button>
-  <button onclick="setLang('he')">HE</button>
-  
+
+  <!-- LANGUAGE -->
+  <div class="lang-switch">
+    <button onclick="setLang('en')">EN</button>
+    <button onclick="setLang('he')">HE</button>
+  </div>
 
   <!-- HERO -->
   <section class="hero">
-    <h1 id="heroTitle"></h1>
-    <p id="heroDesc"></p>
-    <p class="sub" id="heroSub"></p>
+    <h1 data-key="heroTitle"></h1>
+    <p data-key="heroDesc"></p>
+    <p data-key="heroSub"></p>
 
-    <a class="btn"
-       href="https://wa.me/972523726062?text=Hi%2C%20I%20want%20piano%20lesson%20details%20in%20Tel%20Aviv.">
-      Contact on WhatsApp
+    <a class="btn" id="whatsappBtn" href="#">
+      WhatsApp
     </a>
   </section>
 
   <!-- WHY -->
   <section>
-    <h2 id="whyTitle"></h2>
+    <h2 data-key="whyTitle"></h2>
+
     <ul>
-      <li>✔ One-on-one private lessons</li>
-      <li>✔ Fast structured learning</li>
-      <li>✔ Online & in-person lessons</li>
-      <li>✔ Flexible schedule</li>
+      <li data-key="why1"></li>
+      <li data-key="why2"></li>
+      <li data-key="why3"></li>
+      <li data-key="why4"></li>
     </ul>
   </section>
 
- <!-- VIDEO -->
-<section class="videos">
-  <h2>Watch a Sample Lesson 🎥</h2>
+  <!-- VIDEO -->
+  <section class="videos">
+    <h2 data-key="videoTitle"></h2>
 
-  <div class="video-container">
-
-    <!-- TikTok Embed -->
     <blockquote class="tiktok-embed"
       cite="https://www.tiktok.com/@piano.shabi/video/7505372237034245384"
       data-video-id="7505372237034245384"
       style="max-width: 605px;min-width: 325px;">
       <section></section>
     </blockquote>
+  </section>
 
-  </div>
-</section>
-
-<!-- TikTok script (EN ALTTA OLMALI) -->
-<script async src="https://www.tiktok.com/embed.js"></script>
+  <script async src="https://www.tiktok.com/embed.js"></script>
 
   <!-- LOCATION -->
   <section>
-    <h2 id="locTitle"></h2>
-    <p id="locText1"></p>
-    <p id="locText2"></p>
+    <h2 data-key="locTitle"></h2>
+    <p data-key="locText1"></p>
+    <p data-key="locText2"></p>
   </section>
 
   <!-- CTA -->
   <section class="cta">
-    <h2 id="ctaTitle"></h2>
-    <p id="ctaDesc"></p>
+    <h2 data-key="ctaTitle"></h2>
+    <p data-key="ctaDesc"></p>
 
-    <a class="btn"
-       href="https://wa.me/972523726062?text=Hi%2C%20I%20want%20to%20start%20piano%20lessons.">
-      WhatsApp Now
+    <a class="btn" id="ctaBtn" href="#">
+      Start Now
     </a>
   </section>
 
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

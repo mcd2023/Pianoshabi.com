@@ -1,109 +1,75 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
+  background: #f6f7fb;
+  color: #111;
+
+  /* 🔥 FULL CENTER SYSTEM */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
   text-align: center;
-  color: #222;
-  background: #fff;
-  line-height: 1.6;
 }
 
-/* HERO */
-.hero {
-  background: linear-gradient(135deg, #111, #333);
-  color: white;
-  padding: 100px 20px;
-}
-
-.hero h1 {
-  font-size: 40px;
-  margin-bottom: 10px;
-}
-
-.hero p {
-  font-size: 18px;
-  opacity: 0.9;
-}
-
-/* SECTIONS (GÜVENLİ - HER ZAMAN GÖRÜNÜR) */
+/* tüm sectionlar center */
 section {
-  padding: 70px 20px;
+  width: 100%;
   max-width: 900px;
-  margin: auto;
-
-  /* animasyon güvenli */
-  opacity: 1;
-  transform: none;
+  padding: 60px 20px;
+  margin: 0 auto;
+  text-align: center;
 }
 
-/* LIST */
+/* listeleri ortala */
 ul {
   list-style: none;
   padding: 0;
-}
-
-li {
-  margin: 10px 0;
-}
-
-/* VIDEOS */
-.videos {
-  background: #f9f9f9;
-}
-
-.video-container {
+  margin: 0 auto;
   display: flex;
-  gap: 20px;
-  justify-content: center;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
 }
 
-.video-container iframe {
+/* li kutuları center */
+ul li {
+  background: white;
+  margin: 10px auto;
+  padding: 14px;
+  width: 90%;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+/* hero center garanti */
+.hero {
   width: 100%;
-  max-width: 400px;
-  height: 225px;
-  border-radius: 12px;
+  text-align: center;
+  padding: 120px 20px 80px;
 }
 
-/* BUTTON */
+/* language buttons center bozulmasın */
+.lang-switch {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+}
+
+/* buttons center */
 .btn {
   display: inline-block;
-  background: #25D366;
-  color: white;
-  padding: 16px 32px;
-  text-decoration: none;
-  border-radius: 40px;
-  font-weight: bold;
   margin-top: 20px;
-  transition: 0.3s ease;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  padding: 14px 22px;
+  background: #25d366;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: bold;
 }
 
-.btn:hover {
-  background: #1ebe5d;
-  transform: scale(1.05);
-}
-
-/* CTA */
-.cta {
-  background: #f2f2f2;
-  padding: 80px 20px;
-}
-
-/* SUB TEXT */
-.sub {
-  font-size: 14px;
-  opacity: 0.8;
-  margin-top: 10px;
-}
-
-/* MOBILE */
-@media (max-width: 600px) {
-  .hero h1 {
-    font-size: 26px;
-  }
-
-  .video-container {
-    flex-direction: column;
-    align-items: center;
-  }
+/* video center */
+.tiktok-embed {
+  margin: 0 auto;
 }
