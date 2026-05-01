@@ -2,73 +2,268 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <title>Piano Studio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PianoShabi | Piano Lessons Tel Aviv</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
 
-  <!-- LANGUAGE -->
-  <div class="lang-switch">
-    <button onclick="setLang('en')">EN</button>
-    <button onclick="setLang('he')">HE</button>
+<!-- 🎵 BACKGROUND MUSIC -->
+<audio id="bgMusic" loop>
+  <source src="music.mp3" type="audio/mp3">
+</audio>
+
+<!-- HEADER -->
+<header>
+  <div class="logo">PIANO STUDIO / SHABI</div>
+
+  <nav>
+    <a href="#">HOME</a>
+    <a href="#">ABOUT</a>
+    <a href="#">LESSONS</a>
+    <a href="#">PRICING</a>
+    <a href="#">GALLERY</a>
+    <a href="#">CONTACT</a>
+  </nav>
+
+
+  <div class="buttons">
+  <button class="main-btn" onclick="openWhatsApp()">
+    BOOK A TRIAL LESSON  • הזמן שיעור ניסיון
+  </button>
   </div>
 
-  <!-- HERO -->
-  <section class="hero">
-    <h1 data-key="heroTitle"></h1>
-    <p data-key="heroDesc"></p>
-    <p data-key="heroSub"></p>
+  
+</header>
 
-    <a class="btn" id="whatsappBtn" href="#">
-      WhatsApp
-    </a>
-  </section>
+<!-- HERO -->
+<section class="hero">
+  <div class="overlay"></div>
 
-  <!-- WHY -->
-  <section>
-    <h2 data-key="whyTitle"></h2>
+  <div class="hero-text">
+    <h1 id="title">Piano Lessons in Tel Aviv</h1>
+    <h2 id="subtitleHe">..שיעורי פסנתר בתל אביב.</h2>
+    <br>
+    <p id="subtitle">Personalized lessons for kids & adults</p>
+    <p id="subtitleHeText">שיעורים מותאמים אישית לילדים ומבוגרים</p>
 
-    <ul>
-      <li data-key="why1"></li>
-      <li data-key="why2"></li>
-      <li data-key="why3"></li>
-      <li data-key="why4"></li>
-    </ul>
-  </section>
+    
+      <div class="buttons">
+        <button class="main-btn" onclick="openWhatsApp()">
+          BOOK A TRIAL LESSON  • הזמן שיעור ניסיון
+        </button>
+        <button class="main-btn" onclick="openWhatsApp()">
+          CONTACT ME  • הצור קשר איתי        
+        </button>
+      
+      
+    </div>
+  </div>
+</section>
 
-  <!-- VIDEO -->
-  <section class="videos">
-    <h2 data-key="videoTitle"></h2>
+<!-- ABOUT -->
+<section class="about">
+  <div class="about-img"></div>
 
-    <blockquote class="tiktok-embed"
-      cite="https://www.tiktok.com/@piano.shabi/video/7505372237034245384"
-      data-video-id="7505372237034245384"
-      style="max-width: 605px;min-width: 325px;">
-      <section></section>
-    </blockquote>
-  </section>
+  <div class="about-text">
+    <h2 id="aboutTitle">Hi, I'm Shabi</h2>
+    <h2>היי, אני שבי</h2>
+    <p id="aboutText">
+      Professional pianist and teacher with over 15 years of experience. I believe every student has a unique musical voice, and my goal is to help you discover and express it.
+      <br>
+      נגן פסנתר ומורה מקצועי עם ניסיון של מעל 15 שנה. אני מאמין שלכל תלמיד יש קול מוזיקלי ייחודי, והמטרה שלי היא לעזור לכם לגלות אותו ולהביע אותו.
+    </p>
+  </div>
+</section>
 
-  <script async src="https://www.tiktok.com/embed.js"></script>
+<!-- LESSONS -->
+<section class="lessons">
+  <h2>_____ Lessons For Every Age _____</h2>
+  <h2>שיעורים לכל גיל</h2>
+  <br>
+  <div class="cards">
+    <div class="card">
+      <h3>Kids Lessons</h3>
+      <h3>שיעורים לילדים</h3>
+      <p>Fun & engaging lessons</p>
+      <p>שיעורים מושרים ומרגשים</p>
+    </div>
 
-  <!-- LOCATION -->
-  <section>
-    <h2 data-key="locTitle"></h2>
-    <p data-key="locText1"></p>
-    <p data-key="locText2"></p>
-  </section>
+    <div class="card">
+      <h3><fa-muzik></h3>
+      
+    </div>
 
-  <!-- CTA -->
-  <section class="cta">
-    <h2 data-key="ctaTitle"></h2>
-    <p data-key="ctaDesc"></p>
+    <div class="card">
+      <h3>Adults Lessons</h3>
+      <h3>שיעורים dla מבוגרים</h3>
+      <p>Beginner to advanced</p>
+      <p>מתחילים עד מתקדמים</p>
+    </div>
+  </div>
+</section>
+ 
+<!-- DENEYIM -->
 
-    <a class="btn" id="ctaBtn" href="#">
-      Start Now
-    </a>
-  </section>
+<section class="features-section">
+    <div class="container">
+        <!-- Madde 1 -->
+        <div class="feature-item">
+            <div class="icon"><i class="fa-solid fa-graduation-cap"></i></div>
+            <h3>15+ Years Experience</h3>
+            <p class="hebrew">מעל 15 שנות ניסיון</p>
+            <p class="desc">Professional training and teaching expertise.</p>
+            <p class="hebrew-desc">ניסיון מקצועי בהוראה והדרכה.</p>
+        </div>
 
-  <script src="script.js"></script>
+        <!-- Madde 2 -->
+        <div class="feature-item">
+            <div class="icon"><i class="fa-regular fa-user"></i></div>
+            <h3>Personalized Approach</h3>
+            <p class="hebrew">גישה אישית</p>
+            <p class="desc">Lessons tailored to your goals and learning style.</p>
+            <p class="hebrew-desc">שיעורים מותאמים למטרות וסגנון הלמידה שלך.</p>
+        </div>
+
+        <!-- Madde 3 -->
+        <div class="feature-item">
+            <div class="icon"><i class="fa-solid fa-music"></i></div>
+            <h3>Note Reading Focus</h3>
+            <p class="hebrew">דגש על קריאת תווים</p>
+            <p class="desc">Strong foundation in music theory and sight-reading.</p>
+            <p class="hebrew-desc">יסודות חזקים בתיאוריה מוזיקלית וקריאת תווים.</p>
+        </div>
+
+        <!-- Madde 4 -->
+        <div class="feature-item">
+            <div class="icon"><i class="fa-solid fa-keyboard"></i></div>
+            <h3>Modern & Classical</h3>
+            <p class="hebrew">סגנונות מגוונים</p>
+            <p class="desc">From classical to modern, play the music you love.</p>
+            <p class="hebrew-desc">משעשועים ועד מודרני, נגן את המוזיקה שאתה אוהב.</p>
+        </div>
+    </div>
+</section>
+
+<!-- PRICING -->
+<section class="pricing">
+  <h2>Lessons & Pricing</h2>
+  <h2>שיעורים & ומחירים</h2>
+  <br>
+  <div class="cards">
+    <div class="card">
+      <p>30 min</p>
+      <p>Ideal for young beginners</p>
+      <p>מתאים למתחילים צעירים</p>
+      <p>___</p>
+      <p>₪150/ lesson</p>
+      <p> ₪150/שיעור</p>
+
+    </div>
+    <div class="card">
+      <p>POPULAR</p>
+      <p>45 min</p>
+      <P>Balanced progress</P>
+      <p></p>
+      <p>___</p>
+      <p>₪200/ lesson</p>
+      <p> ₪200/שיעור</p>
+    </div>
+    <div class="card">
+      <p>60 min</p>
+      <p>Full musical development</p>
+      <p>התפתחות מוזיקלית מלאה</p>
+      <p>___</p>
+      <p>₪250/ lesson</p>
+      <p> ₪250/שיעור</p>
+    </div>
+  </div>
+</section>
+
+<!-- COMMENTS -->
+<section class="comment">
+  <h2>What My Students Say מה говорים התלמידים שלי</h2>
+  <br>
+  <div class="cards">
+    <div class="card"> 
+      <p>xxxxx</p>
+      <br>
+      <P>Shabi is an amazing teacher!</P>
+      <P> My son looks forward to every lesson.</P>
+      <br>
+      <p>שבי הוא מורה מדהים!</p>
+      <P>הבן שלי מצפה לכל שיעור.</P>
+      <br>
+      <P>Yael, Tel Aviv</P>
+    </div>
+    <div class="card">
+      <p>xxxxx</p>
+      <br>
+      <P>Professional, patient an d inspiring.</P>
+      <P>I've improved so much!</P>
+      <br>
+      <P>מקצועי, סבלני ומעורר השראה.</P>
+      <P>שיפרתי כל כך הרבה!</P>
+      <br>
+      <P>Daniel, Ramat Aviv</P>
+    </div>
+    <div class="card">
+      <p>xxxxx</p>
+      <br>
+      <P>The lessons are the highlight of my week!</P>
+      <br>
+      <p>השיעורים הם הרגע המרכזי בשבוע שלי!</p>
+      <br>
+      <P>Marina, Tel Aviv</P>
+    </div>
+  </div>
+</section>
+
+
+<!-- CTA -->
+<section class="cta">
+  <h2>Ready to start your musical journey?</h2>
+  <h2>מוכן להתחיל את המסע המוסיקלי שלך?</h2>
+  <br>
+  <div class="cards">
+    <div class="buttons">
+      <button class="main-btn" onclick="openWhatsApp()">
+      BOOK A TRIAL LESSON  • הזמן שיעור ניסיון
+      </button>
+    </div>
+    <div class="buttons">
+      <button class="main-btn" onclick="openWhatsApp()">
+      WHATSAPP  • וואטסאפ
+      </button>
+    </div>
+    <div class="buttons">
+      <button class="main-btn" onclick="callMe()">
+      CALL ME  • התקשר אליי
+      </button>
+    </div>
+   
+  </div>
+</section>
+
+<!-- SOCIAL MEDIA -->
+<section class="social-media">
+  <h2>Follow Me on Social Media</h2>
+  <h2>עקוב אחריי במדיה החברתית</h2>
+  <br>
+  <div class="social-icons">
+    <a href="#" target="_blank"><i class="fab fa-tiktok"></i></a>
+    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2023 Pianoshabi. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+
 </body>
 </html>

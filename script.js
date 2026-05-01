@@ -1,72 +1,43 @@
-const texts = {
-  en: {
-    heroTitle: "Private Piano Lessons in Tel Aviv 🎹",
-    heroDesc: "Learn piano step by step with a professional teacher.",
-    heroSub: "✔ 10+ years experience • ✔ All ages • ✔ Beginner friendly",
+// =========================
+// SMOOTH SCROLL (NAV LINKLER)
+// =========================
+document.querySelectorAll("nav a").forEach(link => {
+  link.addEventListener("click", function(e) {
+    e.preventDefault();
 
-    whyTitle: "Why PianoShabi?",
-    why1: "✔ One-on-one private lessons",
-    why2: "✔ Fast structured learning",
-    why3: "✔ Online & in-person lessons",
-    why4: "✔ Flexible schedule",
+    const targetId = this.getAttribute("href");
+    const target = document.querySelector(targetId);
 
-    videoTitle: "Watch a Sample Lesson 🎥",
-
-    locTitle: "Location",
-    locText1: "📍 Tel Aviv – Israel",
-    locText2: "Private home or online lessons available",
-
-    ctaTitle: "Start Your Piano Journey Today 🎹",
-    ctaDesc: "Send a message on WhatsApp",
-
-    wa: "https://wa.me/972523726062"
-  },
-
-  he: {
-    heroTitle: "שיעורי פסנתר פרטיים בתל אביב 🎹",
-    heroDesc: "למד פסנתר צעד אחר צעד עם מורה מקצועי.",
-    heroSub: "✔ ניסיון מעל 10 שנים • ✔ לכל הגילאים • ✔ מתאים למתחילים",
-
-    whyTitle: "למה PianoShabi?",
-    why1: "✔ שיעורים פרטיים אחד על אחד",
-    why2: "✔ למידה מהירה ומובנית",
-    why3: "✔ אונליין ובפרונטלי",
-    why4: "✔ לוח זמנים גמיש",
-
-    videoTitle: "צפה בשיעור לדוגמה 🎥",
-
-    locTitle: "מיקום",
-    locText1: "📍 תל אביב – ישראל",
-    locText2: "שיעורים בבית או אונליין",
-
-    ctaTitle: "התחל את המסע שלך 🎹",
-    ctaDesc: "שלח הודעה בוואטסאפ",
-
-    wa: "https://wa.me/972523726062"
-  }
-};
-
-function setTextMode(lang) {
-  const t = texts[lang];
-
-  document.querySelectorAll("[data-key]").forEach(el => {
-    const key = el.dataset.key;
-    if (t[key]) el.innerText = t[key];
+    if (target) {
+      target.scrollIntoView({
+        behavior: "smooth"
+      });
+    }
   });
+});
 
-  document.getElementById("whatsappBtn").href = t.wa;
-  document.getElementById("ctaBtn").href = t.wa;
 
-  document.body.style.direction = lang === "he" ? "rtl" : "ltr";
-  document.body.style.textAlign = lang === "he" ? "right" : "left";
+// =========================
+// HERO BUTTON CLICK ACTION
+// =========================
+const buttons = document.querySelectorAll(".main-btn");
 
-  localStorage.setItem("lang", lang);
-}
+buttons.forEach(btn => {
+  btn.addEventListener("click", () => {
+    alert("Butona tıklandı!");
+  });
+});
 
-/* alias for HTML buttons */
-function setLang(lang) {
-  setTextMode(lang);
-}
 
-/* default */
-setLang(localStorage.getItem("lang") || "en");
+// =========================
+// HEADER SCROLL EFFECT
+// =========================
+window.addEventListener("scroll", () => {
+  const header = document.querySelector("header");
+
+  if (window.scrollY > 50) {
+    header.style.background = "rgba(0,0,0,0.9)";
+  } else {
+    header.style.background = "rgba(0,0,0,0.6)";
+  }
+});

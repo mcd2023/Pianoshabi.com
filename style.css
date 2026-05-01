@@ -1,78 +1,193 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f6f7fb;
-  color: #111;
-
-  /* 🔥 FULL CENTER SYSTEM */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  text-align: center;
-}
-
-/* tüm sectionlar center */
-section {
-  width: 100%;
-  max-width: 900px;
-  padding: 60px 20px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-/* listeleri ortala */
-ul {
-  list-style: none;
+/* =========================
+   RESET
+========================= */
+* {
+  margin: 5px;
   padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* =========================
+   BODY (TEK VE DOĞRU)
+========================= */
+body {
+  background: #0d0d0f;
+  color: #fff;
+  text-align: center;
+}
+
+/* =========================
+   HEADER
+========================= */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(10px);
+}
+
+.logo {
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #ddd;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #c8a97e;
+}
+
+/* =========================
+   BUTTON
+========================= */
+.main-btn {
+  padding: 12px 25px;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #c8a97e, #b8966b);
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.main-btn:hover {
+  transform: scale(1.05);
+}
+
+/* =========================
+   HERO
+========================= */
+.hero {
+  height: 100vh;
+  background: url("piano.jpg") center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.6), #0d0d0f);
+}
+
+.hero-text {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.hero h2 {
+  font-size: 22px;
+  opacity: 0.9;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 16px;
+  opacity: 0.8;
+}
+
+/* =========================
+   FEATURES SECTION (2. BODY BURAYA TAŞINDI)
+========================= */
+.features-section {
+  padding: 60px 20px;
+  background-color: #f9f7f4;
+  color: #1a1a1a;
+}
+
+.container {
+  max-width: 1200px;
   margin: 0 auto;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-/* li kutuları center */
-ul li {
-  background: white;
-  margin: 10px auto;
-  padding: 14px;
-  width: 90%;
-  max-width: 500px;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  justify-content: space-between;
+  align-items: flex-start;
   text-align: center;
 }
 
-/* hero center garanti */
-.hero {
-  width: 100%;
-  text-align: center;
-  padding: 120px 20px 80px;
-  background-color:cornsilk;
- 
-  background-position: center;
+.feature-item {
+  flex: 1;
+  padding: 0 20px;
+  position: relative;
 }
 
-/* language buttons center bozulmasın */
-.lang-switch {
-  position: fixed;
-  top: 15px;
-  right: 15px;
+.feature-item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 20%;
+  height: 60%;
+  width: 1px;
+  background-color: #d1d1d1;
 }
 
-/* buttons center */
-.btn {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 14px 22px;
-  background: #25d366;
-  color: white;
-  text-decoration: none;
-  border-radius: 10px;
-  font-weight: bold;
+/* =========================
+   CARDS
+========================= */
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
-/* video center */
-.tiktok-embed {
-  margin: 0 auto;
+.card {
+  background: #1a1a1f;
+  padding: 25px;
+  border-radius: 15px;
+  width: 220px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+  padding: 20px;
+  font-size: 12px;
+  opacity: 0.6;
+}
+
+/* =========================
+   MOBILE
+========================= */
+@media(max-width:768px) {
+  header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .feature-item:not(:last-child)::after {
+    display: none;
+  }
 }
