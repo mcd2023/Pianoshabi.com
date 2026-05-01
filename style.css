@@ -161,6 +161,19 @@ nav a:hover {
   transform: translateY(-5px);
 }
 
+.social-icons a {
+  margin: 0 10px;
+  font-size: 26px;
+  color: #c8a97e;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: #ffffff;
+  transform: scale(1.2);
+}
+
 /* =========================
    FOOTER
 ========================= */
