@@ -34,17 +34,45 @@ header {
   letter-spacing: 2px;
 }
 
-nav a {
-  margin: 0 10px;
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.nav a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-decoration: none;
   color: #ddd;
   font-size: 14px;
+  padding: 10px 15px;
+  border-radius: 10px;
   transition: 0.3s;
 }
 
-nav a:hover {
+/* hover card efekti */
+.nav a:hover {
+  background: rgba(200, 169, 126, 0.15);
+  transform: translateY(-3px);
   color: #c8a97e;
 }
+
+.nav a span {
+  font-size: 10px;
+  opacity: 0.6;
+  margin-top: 2px;
+  direction: rtl;
+}
+
+.rating i {
+  color: #c8a97e !important;
+  font-size: 18px;
+}
+
 
 /* =========================
    BUTTON
@@ -62,6 +90,11 @@ nav a:hover {
 
 .main-btn:hover {
   transform: scale(1.05);
+}
+
+section {
+  
+  margin-bottom: 80px;
 }
 
 /* =========================

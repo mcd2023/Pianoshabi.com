@@ -19,15 +19,37 @@
 <header>
   <div class="logo">PIANO STUDIO / SHABI</div>
 
-  <nav>
-    <a href="#">HOME</a>
-    <a href="#">ABOUT</a>
-    <a href="#">LESSONS</a>
-    <a href="#">PRICING</a>
-    <a href="#">GALLERY</a>
-    <a href="#">CONTACT</a>
-  </nav>
+  <nav class="nav">
+  <a href="#home">
+    HOME
+    <span>בית</span>
+  </a>
 
+  <a href="#about">
+    ABOUT
+    <span>אודות</span>
+  </a>
+
+  <a href="#lessons">
+    LESSONS
+    <span>שיעורים</span>
+  </a>
+
+  <a href="#pricing">
+    PRICING
+    <span>מחירים</span>
+  </a>
+
+  <a href="#gallery">
+    GALLERY
+    <span>גלריה</span>
+  </a>
+
+  <a href="#contact">
+    CONTACT
+    <span>צור קשר</span>
+  </a>
+</nav>
 
   <div class="buttons">
   <button class="main-btn" onclick="openWhatsApp()">
@@ -38,8 +60,11 @@
   
 </header>
 
+
+<section id="contact"></section>
+
 <!-- HERO -->
-<section class="hero">
+<section id="home" class="hero">
   <div class="overlay"></div>
 
   <div class="hero-text">
@@ -64,7 +89,7 @@
 </section>
 
 <!-- ABOUT -->
-<section class="about">
+<section id="about" class="about">
   <div class="about-img"></div>
 
   <div class="about-text">
@@ -79,7 +104,7 @@
 </section>
 
 <!-- LESSONS -->
-<section class="lessons">
+<section id="lessons" class="lessons">
   <h2>_____ Lessons For Every Age _____</h2>
   <h2>שיעורים לכל גיל</h2>
   <br>
@@ -104,6 +129,7 @@
     </div>
   </div>
 </section>
+
  
 <!-- DENEYIM -->
 
@@ -148,7 +174,7 @@
 </section>
 
 <!-- PRICING -->
-<section class="pricing">
+<section id="pricing" class="pricing">
   <h2>Lessons & Pricing</h2>
   <h2>שיעורים & ומחירים</h2>
   <br>
@@ -183,12 +209,14 @@
 </section>
 
 <!-- COMMENTS -->
-<section class="comment">
+<section  id="gallery" class="comment">
   <h2>What My Students Say מה говорים התלמידים שלי</h2>
   <br>
   <div class="cards">
     <div class="card"> 
-      <p>xxxxx</p>
+      <div class="rating">
+        ★★★★★
+      </div>
       <br>
       <P>Shabi is an amazing teacher!</P>
       <P> My son looks forward to every lesson.</P>
@@ -199,7 +227,9 @@
       <P>Yael, Tel Aviv</P>
     </div>
     <div class="card">
-      <p>xxxxx</p>
+      <div class="rating">
+      ★★★★★
+      </div>
       <br>
       <P>Professional, patient an d inspiring.</P>
       <P>I've improved so much!</P>
@@ -210,7 +240,9 @@
       <P>Daniel, Ramat Aviv</P>
     </div>
     <div class="card">
-      <p>xxxxx</p>
+      <div class="rating">
+        ★★★★★
+      </div>
       <br>
       <P>The lessons are the highlight of my week!</P>
       <br>
@@ -249,7 +281,7 @@
 
 
 <!-- SOCIAL MEDIA -->
-<section class="social-media">
+<section id="contact" class="social-media">
   <h2>Follow Me on Social Media</h2>
   <h2>עקוב אחריי במדיה החברתית</h2>
 

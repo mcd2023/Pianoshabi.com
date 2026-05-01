@@ -41,3 +41,23 @@ window.addEventListener("scroll", () => {
     header.style.background = "rgba(0,0,0,0.6)";
   }
 });
+
+document.querySelectorAll(".nav a").forEach(link => {
+  link.addEventListener("click", function(e) {
+    e.preventDefault();
+
+    const target = document.querySelector(this.getAttribute("href"));
+
+    if (target) {
+      target.scrollIntoView({
+        behavior: "smooth"
+      });
+    }
+
+    // küçük tıklama animasyonu
+    this.style.transform = "scale(0.9)";
+    setTimeout(() => {
+      this.style.transform = "scale(1)";
+    }, 150);
+  });
+});
