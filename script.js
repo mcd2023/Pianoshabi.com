@@ -28,6 +28,19 @@ buttons.forEach(btn => {
   });
 });
 
+let index = 0;
+const reviews = document.querySelectorAll(".review");
+
+function showReview() {
+  reviews.forEach(r => r.classList.remove("active"));
+  reviews[index].classList.add("active");
+
+  index = (index + 1) % reviews.length;
+}
+
+showReview();
+setInterval(showReview, 3000);
+
 
 // =========================
 // HEADER SCROLL EFFECT
