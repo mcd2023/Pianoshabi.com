@@ -169,17 +169,6 @@ header {
 }
 
 
-.pricing {
-  background-image: url("assets/pricing.jpg"); /* Arka plan resmi */  
-  background-size: cover;       /* Resmi alanı kaplayacak şekilde ölçekler */
-  background-position: center;  /* Ortalar */
-  background-repeat: no-repeat; /* Tekrar etmez */
-  color: white;                 /* Yazılar resim üzerinde okunaklı olsun */
-  padding: 100px 20px;          /* İç boşluk */
-
-}
-
-
 .comment {
   background-color: #ffffff !important; /* Beyaz arka plan */
   color : white;
