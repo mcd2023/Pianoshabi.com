@@ -89,3 +89,11 @@ function openWhatsApp() {
 
   window.open(url, "_blank");
 }
+
+window.addEventListener("load", () => {
+  const audio = document.getElementById("bg-music");
+
+  audio.play().catch(() => {
+    console.log("Autoplay engellendi");
+  });
+});
