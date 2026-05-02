@@ -143,12 +143,12 @@ header {
 }
 
 .about {
-  color : black !important;
+  
   background-image: url("assets/about.jpg"); /* Arka plan resmi */  
   background-size: cover;       /* Resmi alanı kaplayacak şekilde ölçekler */
   background-position: center;  /* Ortalar */
   background-repeat: no-repeat; /* Tekrar etmez */
-  color: white;                 /* Yazılar resim üzerinde okunaklı olsun */
+  color: black;                 /* Yazılar resim üzerinde okunaklı olsun */
   padding: 150px 20px;          /* İç boşluk */
 }
 
@@ -181,6 +181,25 @@ header {
 .comment {
   background-color: #ffffff !important; /* Beyaz arka plan */
   color : white;
+}
+
+.carousel {
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+  font-family: Arial;
+}
+
+.review {
+  display: none;
+  padding: 20px;
+  background: #f5f5f5;
+  border-radius: 12px;
+  transition: 0.5s;
+}
+
+.review.active {
+  display: block;
 }
 
 .social-media {
