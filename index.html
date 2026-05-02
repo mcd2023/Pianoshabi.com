@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
 </head>
 
 <body>
@@ -14,7 +15,7 @@
 
 <!-- 🎵 BACKGROUND MUSIC -->
 <audio id="bg-music" loop>
-  <source src="leberch-piano-438549.mp3" type="audio/mpeg">
+  <source src="assets/leberch-piano-438549.mp3" type="audio/mpeg">
 </audio>
 
 <!-- HEADER -->
@@ -178,7 +179,7 @@
 </section>
 
 <!-- cta -->
-  <section class="cta">
+  <section id="cta" class="cta">
     <h2>Ready to start your musical journey?</h2>
     <h2>מוכן להתחיל את המסע המוסיקלי שלך?</h2>
     <br>
@@ -195,7 +196,7 @@
       </div>
       <div class="buttons">
         <a href="tel:+905XXXXXXXXX">
-          <button>CALL ME  • התקשר אליי</button>
+          <button class="main-btn">CALL ME  • התקשר אליי</button>
         </a>
       </div>
     
@@ -205,44 +206,27 @@
 
 <!-- COMMENTS -->
 <section id="gallery" class="comment">
-  <h2>What My Students Say מה אומרים התלמידים שלי</h2>
+  <h2>What My Students Say מה אומרים התלמידים שלי</h2> 
 
-  <div class="comments-container">
+ 
+  <div class="cta">
+     <div class="review-card" id="reviewCard">
 
-    <div class="comment-item">
-      <div class="stars">★★★★★</div>
+        <div class="stars" id="stars">⭐⭐⭐⭐⭐</div>
 
-      <p>Shabi is an amazing teacher!</p>
-      <p>My son looks forward to every lesson.</p>
+        <div class="name" id="reviewName"></div>
 
-      <p>שבי הוא מורה מדהים!</p>
-      <p>הבן שלי מצפה לכל שיעור.</p>
+        <div class="location" id="reviewLocation"></div> 
 
-      <span>Yael, Tel Aviv</span>
-    </div>
+        <p class="time" id="reviewTime"></p>
 
-    <div class="comment-item">
-      <div class="stars">★★★★★</div>
+        <p class="text" id="reviewText"></p>
 
-      <p>Professional, patient and inspiring.</p>
-      <p>I've improved so much!</p>
-
-      <p>מקצועי, סבלני ומעורר השראה.</p>
-      <p>שיפרתי כל כך הרבה!</p>
-
-      <span>Daniel, Ramat Aviv</span>
-    </div>
-
-    <div class="comment-item">
-      <div class="stars">★★★★★</div>
-
-      <p>The lessons are the highlight of my week!</p>
-
-      <p>השיעורים הם הרגע המרכזי בשבוע שלי!</p>
-
-      <span>Marina, Tel Aviv</span>
-    </div>
-
+        <div class="original" id="reviewOriginal" dir="rtl"></div>    
+                      
+     </div>
+    <br>
+     <a href="https://maps.app.goo.gl/Va5JTXcJv8MMtu4t5?g_st=ic" target="_blank"> ⭐Leave a comment on Google ⭐ השאר תגובה בגוגל⭐</a>
   </div>
 </section>
 
