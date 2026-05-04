@@ -44,19 +44,21 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  border : 5px solid #c8a97e; 
 
 }
 
 nav {
   display: flex;
   gap: 20px;
+  padding: 10px 15px;
 }
 
 
 .nav button {
   background: none;
   border: none;
-  color: #ddd;
+  color: hsl(54, 89%, 52%);
   font-size: 16px;
   cursor: pointer;
   transition: 0.3s;
@@ -560,32 +562,141 @@ footer {
   opacity: 0.6;
 }
 
+/* =========================
+   RESPONSIVE + BACKGROUND FINAL
+========================= */
 
-#topBtn {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-  border: none;
-  background: black;
-  color: white;
-  font-size: 45px;
-  cursor: pointer;
-  z-index: 9999;
-}
-
-/* RESPONSIVE COMMENTS */
-
-@media (max-width: 900px) {
-  .comments-container {
-    grid-template-columns: repeat(2, 1fr);
+/* LARGE SCREEN */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
   }
 }
 
-@media (max-width: 600px) {
-  .comments-container {
-    grid-template-columns: 1fr;
+/* TABLET */
+@media (max-width: 1024px) {
+
+  header {
+    padding: 30px 20px;
+  }
+
+  .about,
+  .lessons,
+  .features-section,
+  .reviews,
+  .social-media,
+  #cta {
+    padding: 80px 20px;
+  }
+}
+
+/* TABLET SMALL */
+@media (max-width: 768px) {
+
+  header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .buttons {
+    width: 100%;
+  }
+
+  .main-btn {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature-item {
+    width: 100%;
+    padding: 15px 0;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .review-card {
+    width: 100%;
+  }
+
+  .about-text {
+    padding: 20px;
+  }
+
+  /* 🔥 ARKA PLAN SAĞA KAYDIR */
+  .about,
+  .lessons,
+  .reviews,
+  .social-media,
+  .features-section,
+  #cta {
+    background-position: right center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 480px) {
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  header {
+    padding: 20px 10px;
+  }
+
+  .main-btn {
+    font-size: 16px;
+    padding: 12px 20px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  .social-icons a {
+    font-size: 22px;
+  }
+
+  /* 🔥 DAHA SAĞ ODAK */
+  .about,
+  .lessons,
+  .reviews,
+  .social-media,
+  .features-section,
+  #cta {
+    background-position: 80% center;
   }
 }
