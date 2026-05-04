@@ -37,40 +37,25 @@
   <source src="assets/leberch-piano-438549.mp3" type="audio/mpeg">
 </audio>
 
-<!-- HEADER -->
-<header>
-    <div>
-      <img src="assets/logo.jpg" alt="Firma Logosu" width="100" height="auto" style="border-radius: 50%;" flex-shrink="0">    
-    </div>
+<header id="header">
 
-  <nav class="nav ">
-    
-      <a class="nav-button" href="#about">
-        אודות
-        <span>ABOUT</span>
-      </a>
+  <div class="logo">
+    <img src="assets/logo.jpg" alt="logo">
+  </div>
 
-      <a class="nav-button" href="#lessons">
-        שיעורים
-        <span>LESSONS</span>
-      </a>
-
-      <a class="nav-button" href="#reviews">
-        ביקורות
-        <span>REVIEWS</span>
-      </a>
-
-      <a class="nav-button" href="#contact">
-        >צור קשר
-        <span>CONTACT</span>
-      </a>
+  <nav class="nav">
+    <a href="#about">אודות <span>ABOUT</span></a>
+    <a href="#lessons">שיעורים <span>LESSONS</span></a>
+    <a href="#reviews">ביקורות <span>REVIEWS</span></a>
+    <a href="#contact">צור קשר <span>CONTACT</span></a>
   </nav>
 
   <div class="buttons">
     <button class="main-btn" onclick="openWhatsApp()">
-    הזמן שיעור ניסיון • BOOK A TRIAL LESSON  
+      הזמן שיעור ניסיון • BOOK A TRIAL LESSON  
     </button>
-  </div>  
+  </div>
+
 </header>
 
 <!-- ABOUT -->
@@ -115,11 +100,11 @@
 </section>
 
  
-<!-- DENEYIM -->
+<!-- FEATURES -->
 
 <section class="features-section">
     <div class="container reveal"><!-- effect -->
-        <!-- Madde 1 -->
+        <!--  1 -->
         <div class="feature-item reveal">
             <div class="icon"><i class="fa-solid fa-graduation-cap"></i></div>
             <h3>מעל 15 שנות ניסיון</h3>
@@ -129,7 +114,7 @@
             
         </div>
 
-        <!-- Madde 2 -->
+        <!--  2 -->
         <div class="feature-item">
             <div class="icon"><i class="fa-regular fa-user"></i></div>
             <h3>גישה אישית</h3>
@@ -138,7 +123,7 @@
             <p>Lessons tailored to your goals and learning style.</p>
         </div>
 
-        <!-- Madde 3 -->
+        <!--  3 -->
         <div class="feature-item">
             <div class="icon"><i class="fa-solid fa-music"></i></div>
             <h3>דגש על קריאת תווים</h3>
@@ -147,7 +132,7 @@
             <p>Strong foundation in music theory and sight-reading.</p>
         </div>
 
-        <!-- Madde 4 -->
+        <!--  4 -->
         <div class="feature-item">
             <div><i class="fa-solid fa-keyboard"></i></div>
             <h3>סגנונות מגוונים</h3>
@@ -165,29 +150,27 @@
     <h2>Ready to start your musical journey?</h2>
     <br>
     <div class="cards">
-      <div class="buttons">
-        <button class="main-btn" onclick="openWhatsApp()">
-        הזמן שיעור ניסיון• BOOK A TRIAL LESSON   
-        </button>
-      </div>
-      <div class="buttons">
-        <button class="main-btn" onclick="openWhatsApp()">
-          וואטסאפ • WHATSAPP 
-        </button>
-      </div>
-      <div class="buttons">
-        <a href="tel:+972523726062">
-          <button class="main-btn">התקשר אליי • CALL ME</button>
-        </a>
-      </div>
-      <div class="buttons"></div>
-        <a href="https://www.tiktok.com/@piano.shabi" target="_blank"><button class="main-btn">
-         • עקבו אחריי בטיקטוק• FOLLOW ME ON TIKTOK
-        </button>
-        </a>
-      </div>  
-  
-    
+        <div class="buttons">
+          <button class="main-btn" onclick="openWhatsApp()">
+          הזמן שיעור ניסיון• BOOK A TRIAL LESSON   
+          </button>
+        </div>
+        <div class="buttons">
+          <button class="main-btn" onclick="openWhatsApp()">
+            וואטסאפ • WHATSAPP 
+          </button>
+        </div>
+        <div class="buttons">
+          <a href="tel:+972523726062">
+            <button class="main-btn">התקשר אליי • CALL ME</button>
+          </a>
+        </div>
+        <div class="buttons">
+          <a href="https://www.tiktok.com/@piano.shabi" target="_blank"><button class="main-btn">
+           עקבו אחריי בטיקטוק• FOLLOW ME ON TIKTOK
+          </button>
+          </a>
+        </div>
     </div>
   </section>
 
@@ -201,7 +184,7 @@
   <div class="cta">
      <div class="review-card" id="reviewCard">
 
-        <div class="stars" id="stars">⭐⭐⭐⭐⭐</div>
+        <div class="review-stars" id="stars">⭐⭐⭐⭐⭐</div>
 
         <div class="name" id="reviewName"></div>
 
@@ -260,7 +243,9 @@
 
     <p>
       <a href="privacy.html" style="color:#ccc; margin:0 10px;">מדיניות פרטיות</a> |
-      <a href="terms.html" style="color:#ccc; margin:0 10px;">תנאי שימוש</a>
+      <a href="terms.html" style="color:#ccc; margin:0 10px;">תנאי שימוש</a> |
+      <a href="cookies.html" style="color:#ccc; margin:0 10px;">מדיניות עוגיות</a> |
+      <a href="cancellation.html" style="color:#ccc; margin:0 10px;">מדיניות ביטולים</a>
     </p>
   </div>
 
@@ -271,9 +256,12 @@
 
     <p>📍 Tel Aviv, Israel</p>
 
+    
     <p>
       <a href="privacy.html" style="color:#ccc; margin:0 10px;">Privacy Policy</a> |
-      <a href="terms.html" style="color:#ccc; margin:0 10px;">Terms of Service</a>
+      <a href="terms.html" style="color:#ccc; margin:0 10px;">Terms of Service</a> |
+      <a href="cookies.html" style="color:#ccc; margin:0 10px;">Cookie Policy</a> |
+      <a href="cancellation.html" style="color:#ccc; margin:0 10px;">Cancellation Policy</a>
     </p>
   </div>
 
@@ -307,7 +295,11 @@
   </p>
 
 </footer>
+
 <script src="script.js"></script>
+
+<!-- 🔝 TOP BUTTON -->
+<button id="topBtn" class="top-btn">↑</button>
 
 <!-- BEGIN PLERDY CODE -->
 <script type="text/javascript" defer data-plerdy_code='1'>

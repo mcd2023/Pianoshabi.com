@@ -36,6 +36,7 @@ document.querySelectorAll(".main-btn").forEach(btn => {
 });
 
 
+
 // =========================
 // WHATSAPP BUTTON
 // =========================
@@ -50,17 +51,43 @@ function openWhatsApp() {
 // =========================
 // HEADER SCROLL EFFECT
 // =========================
-window.addEventListener("scroll", () => {
-  const header = document.querySelector("header");
-  if (!header) return;
+const header = document.getElementById("header");
 
+window.addEventListener("scroll", () => {
   if (window.scrollY > 50) {
-    header.style.background = "rgba(0,0,0,0.9)";
+    header.classList.add("scrolled");
   } else {
-    header.style.background = "rgba(0,0,0,0.6)";
+    header.classList.remove("scrolled");
   }
 });
 
+
+// =========================
+// ACTIVE SECTION HIGHLIGHT
+// =========================
+const sections = document.querySelectorAll("section");
+const navLinks = document.querySelectorAll(".nav a");
+
+window.addEventListener("scroll", () => {
+  let current = "";
+
+  sections.forEach(section => {
+    const top = window.scrollY;
+    const offset = section.offsetTop - 120;
+    const height = section.offsetHeight;
+
+    if (top >= offset && top < offset + height) {
+      current = section.getAttribute("id");
+    }
+  });
+
+  navLinks.forEach(link => {
+    link.classList.remove("active");
+    if (link.getAttribute("href") === "#" + current) {
+      link.classList.add("active");
+    }
+  });
+});
 
 // =========================
 // BACKGROUND MUSIC (SAFE AUTOPLAY)
@@ -321,4 +348,21 @@ document.addEventListener("DOMContentLoaded", function () {
     window.scrollTo({ top: 0, behavior: "smooth" });
   });
 
+});
+
+const topBtn = document.getElementById("topBtn");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 300) {
+    topBtn.style.display = "flex";
+  } else {
+    topBtn.style.display = "none";
+  }
+});
+
+topBtn.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
 });
