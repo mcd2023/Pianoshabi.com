@@ -560,10 +560,20 @@ footer {
   opacity: 0.6;
 }
 
+
 #topBtn {
   position: fixed;
   bottom: 20px;
   right: 20px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: none;
+  background: black;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 9999;
 }
 
 /* RESPONSIVE COMMENTS */
