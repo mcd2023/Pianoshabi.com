@@ -41,7 +41,7 @@ document.querySelectorAll(".main-btn").forEach(btn => {
 // =========================
 function openWhatsApp() {
   const phone = "972523726062";
-  const message = "Merhaba, piano dersleri hakkında bilgi almak istiyorum.";
+  const message = "שלום, אני רוצה לקבל מידע על שיעורי פסנתר. Hi, I would like to get information about piano lessons.";
   const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
   window.open(url, "_blank");
 }
@@ -127,137 +127,137 @@ const reviews = [
     stars: "⭐⭐⭐⭐⭐",
     name: "Shani Hogi",
     location: "Tel Aviv, Israel",
-    time: "4 months ago",
-    text: "I have been learning piano with Shabi for a year and the experience is amazing. He is very patient, professional and talented.",
-    original: "אני לומדת פסנתר אצל שבי כבר שנה והחוויה כל כך טובה..."
+    time: "לפני 4 חודשים",
+    original:" אני לומד פסנתר עם שבי כבר שנה והחוויה מדהימה. הוא סבלני מאוד, מקצועי ומוכשר.",
+    text: "I have been learning piano with Shabi for a year and the experience is amazing. He is very patient, professional and talented."
   },
   {
     stars: "⭐⭐⭐⭐⭐",
     name: "Doron Yosef",
     location: "Tel Aviv, Israel",
-    time: "4 months ago",
-    text: "A top-level piano teacher with a professional and flexible approach.",
-    original: "מורה לפסנתר ברמה גבוהה מאוד..."
+    time: "לפני 4 חודשים",
+    original: " מורה לפסנתר ברמה גבוהה עם גישה מקצועית וגמישה.",
+    text: "A top-level piano teacher with a professional and flexible approach."
   },
   {
     stars: "⭐⭐⭐⭐⭐",
     name: "K N",
     location: "Israel",
-    time: "3 months ago",
-    text: "Very hard to find such a professional and kind teacher. Highly recommended.",
-    original: "קשה למצוא מורים כאלה מקצועיים..."
+    time: "לפני 3 חודשים",
+    original: " קשה מאוד למצוא מורה מקצועי ואדיב כזה. מומלץ מאוד.",
+    text: "Very hard to find such a professional and kind teacher. Highly recommended."
   },
   {
     stars: "⭐⭐⭐⭐⭐",
     name: "Omri Klug",
     location: "Israel",
-    time: "4 months ago",
-    text: "Kind, patient and professional teacher who makes learning enjoyable.",
-    original: "מורה סבלני ונחמד מאוד..."
+    time: "לפני 4 חודשים",
+    original:" מורה נדיב, סבלני ומקצועי שהופך את הלמידה למהנה.",
+    text: "Kind, patient and professional teacher who makes learning enjoyable."
   },
   {
     stars: "⭐⭐⭐⭐⭐",
     name: "Yuval",
     location: "Israel",
-    time: "4 months ago",
-    text: "The best teacher I ever had. He made me love piano again.",
-    original: "המורה הכי טוב שהיה לי..."
+    time: "לפני 4 חודשים",
+    original: "המורה הכי טוב שהיה לי...",
+    text: "The best teacher I ever had. He made me love piano again."
   },
   {
     stars: "⭐⭐⭐⭐⭐",
     name: "Sandra Treves",
     location: "Israel",
-    time: "4 months ago",
-    text: "Shabi is a wonderful piano teacher. Very professional and patient.",
-    original: "שבי הוא מורה נהדר..."
+    time: "לפני 4 חודשים",
+    original:" המורה הכי טוב שהיה לי אי פעם. הוא גרם לי לאהוב את הפיאנו שוב.",
+    text: "Shabi is a wonderful piano teacher. Very professional and patient."
   },
   {
     stars: "⭐⭐⭐⭐⭐",
     name: "Romy Attar",
     location: "Israel",
-    time: "2 months ago",
-    text: "Excellent piano teacher, very patient and talented.",
-    original: "מורה מצוין לפסנתר..."
+    time: "לפני 2 חודשים",
+    original:" מורה לפסנתר מצוין, סבלני ומוכשר מאוד.",
+    text: "Excellent piano teacher, very patient and talented."
   },
   {
     stars: "⭐⭐⭐⭐⭐",
     name: "Lior Sabag",
     location: "Israel",
-    time: "4 months ago",
-    text: "Amazing teacher who helped me achieve my dream of playing music.",
-    original: "מורה מדהים שעזר לי..."
+    time: "לפני 4 חודשים",
+    original:"מורה נהדרת שעזרה לי להשיג את החלום שלי לנגן מוזיקה.",
+    text: "Amazing teacher who helped me achieve my dream of playing music."
   },
   {
     stars: "⭐⭐⭐⭐⭐",
     name: "Vered Forbes Lavon",
     location: "Israel",
-    time: "4 months ago",
-    text: "Great teacher, my daughter enjoyed every lesson.",
-    original: "שבי הוא מורה נהדר לילדים..."
+    time: "לפני 4 חודשים",
+    original:" מורה נהדר, בתי נהנתה מכל שיעור.",
+    text: "Great teacher, my daughter enjoyed every lesson."
   },
   {
     stars: "⭐⭐⭐⭐⭐",
     name: "Ortal Dai Zaguri",
     location: "Israel",
-    time: "3 months ago",
-    text: "Perfect teacher, very professional and inspiring.",
-    original: "מורה מושלם..."
+    time: "לפני 3 חודשים",
+    original: "מורה מושלם, מאוד מקצועי ומעורר השראה.",
+    text: "Perfect teacher, very professional and inspiring."    
   },
   {
     stars: "⭐⭐⭐⭐⭐",
     name: "Marina Papp",
     location: "Israel",
-    time: "3 months ago",
-    text: "Very professional, mixes modern and classical styles.",
-    original: "מאוד מקצועי..."
+    time: "לפני 3 חודשים",
+    original: "מאוד מקצועי, משלב סגנונות מודרניים וקלאסיים.",
+    text: "Very professional, mixes modern and classical styles."
   },
   {
     stars: "⭐⭐⭐⭐⭐",
     name: "Guy Kazari",
     location: "Israel",
-    time: "3 months ago",
-    text: "Great and talented teacher who adapts to students.",
-    original: "מורה מדהים..."
+    time: "לפני 3 חודשים",
+    original:"מורה גדול ומוכשר שמסתגל לתלמידים.",
+    text: "Great and talented teacher who adapts to students."
   },
   {
     stars: "⭐⭐⭐⭐⭐",
     name: "Ilana Buchval",
     location: "Israel",
-    time: "4 months ago",
-    text: "Enjoying piano lessons very much. Very professional.",
-    original: "נהנית מאוד משיעורי פסנתר..."
+    time: "לפני 4 חודשים",
+    original:"נהנה מאוד משיעורי פסנתר. מאוד מקצועי.",
+    text: "Enjoying piano lessons very much. Very professional."
   },
   {
     stars: "⭐⭐⭐⭐⭐",
     name: "Yair Natan",
     location: "Israel",
-    time: "3 months ago",
-    text: "Best piano teacher I have ever had.",
-    original: "המורה הכי טוב שהיה לי..."
+    time: "לפני 3 חודשים",
+    original: "המורה הכי טוב שהיה לי...",
+    text: "Best piano teacher I have ever had."
   },
   {
     stars: "⭐⭐⭐⭐⭐",
     name: "Merav Schlam",
     location: "Israel",
-    time: "4 months ago",
-    text: "Excellent teacher!!!",
-    original: "מורה מעולה!!!"
+    time: "לפני 4 חודשים",
+    original: "מורה מעולה!!!",
+    text: "Excellent teacher!!!"
   },
   {
     stars: "⭐⭐⭐⭐⭐",
     name: "Lihi Zilberberg",
     location: "Israel",
     time: "5 days ago",
-    text: "Very kind teacher, my kids love the lessons.",
-    original: "מורה מקסימה..."
+    original: "מורה מאוד טובה, הילדים שלי אוהבים את השיעורים.",
+    text: "Very kind teacher, my kids love the lessons."
   },
   {
     stars: "⭐⭐⭐⭐⭐",
     name: "Shira Manusevitz",
     location: "Israel",
-    time: "4 months ago",
-    text: "Great teacher, very professional.",
-    original: "מורה נהדרת..."
+    time: "לפני 4 חודשים",
+    original:" מורה מצוין, מאוד מקצועי.",
+    text: "Great teacher, very professional."
   }
 ];
 
@@ -268,8 +268,8 @@ const stars = document.getElementById("stars");
 const nameEl = document.getElementById("reviewName");
 const locationEl = document.getElementById("reviewLocation");
 const timeEl = document.getElementById("reviewTime");
-const text = document.getElementById("reviewText");
 const original = document.getElementById("reviewOriginal");
+const text = document.getElementById("reviewText");
 
 function showReview() {
   if (!card) return;
@@ -283,8 +283,8 @@ function showReview() {
     nameEl.innerText = r.name;
     locationEl.innerText = r.location;
     timeEl.innerText = r.time;
-    text.innerText = r.text;
-    original.innerText = r.original;    
+    original.innerText = r.original;
+    text.innerText = r.text;    
     
     card.classList.add("show");
 
@@ -295,3 +295,12 @@ function showReview() {
 showReview();
 setInterval(showReview, 4000);
 
+window.addEventListener("scroll", function () {
+  document.querySelectorAll(".reveal").forEach(el => {
+    const top = el.getBoundingClientRect().top;
+
+    if (top < window.innerHeight - 100) {
+      el.classList.add("active");
+    }
+  });
+});
