@@ -2,12 +2,31 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Piano Studio</title>
+
+  <!-- SEO DESCRIPTION (EN + HEBREW) -->
+  <meta name="description" content="Professional piano lessons for kids and adults in Tel Aviv. Learn piano with an experienced teacher. Book your trial lesson today. שיעורי פסנתר מקצועיים לילדים ומבוגרים בתל אביב. למדו פסנתר עם מורה מנוסה וקבעו שיעור ניסיון עוד היום.">
+
+  <!-- KEYWORDS (EN + HEBREW) -->
+  <meta name="keywords" content="piano lessons, piano teacher, learn piano, piano studio, music lessons, Tel Aviv piano lessons, שיעורי פסנתר, מורה לפסנתר, לימוד פסנתר, פסנתר תל אביב">
+
+  <meta name="author" content="Piano Studio">
+
+  <title>Piano Lessons | Professional Piano Teacher | שיעורי פסנתר</title>
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- OPEN GRAPH (SOCIAL + ADS BOOST) -->
+  <meta property="og:title" content="Piano Lessons in Tel Aviv | שיעורי פסנתר">
+  <meta property="og:description" content="Learn piano with a professional teacher. Book your trial lesson today. שיעורי פסנתר מקצועיים בתל אביב.">
+  <meta property="og:type" content="website">
+
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
   <link rel="icon" type="image/png" href="assets/favicon.png">
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-XXXX"></script>
 </head>
 
 <body>
@@ -20,117 +39,77 @@
 
 <!-- HEADER -->
 <header>
-  <div class="logo">
-  
-  <img src="assets/logo.jpg" alt="Firma Logosu" width="100" height="auto" style="border-radius: 50%;" flex-shrink="0">
-  <br>
-
-  </div>
-
-  <nav class="nav">
-  <a href="#home">
-    HOME
-    <span>בית</span>
-  </a>
-
-  <a href="#about">
-    ABOUT
-    <span>אודות</span>
-  </a>
-
-  <a href="#lessons">
-    LESSONS
-    <span>שיעורים</span>
-  </a>
-
-  <a href="#gallery">
-    GALLERY
-    <span>גלריה</span>
-  </a>
-
-  <a href="#contact">
-    CONTACT
-    <span>צור קשר</span>
-  </a>
-</nav>
-
-<div class="buttons">
-  <button class="main-btn" onclick="openWhatsApp()">
-    BOOK A TRIAL LESSON  • הזמן שיעור ניסיון
-  </button>
-</div>
-
-  
-</header>
-
-
-<section id="contact"></section>
-
-<!-- HERO -->
-<section id="home" class="hero">
-  <div class="overlay"></div>
-
-  <div class="hero-text">
-    <h1 id="title">Piano Lessons in Tel Aviv</h1>
-    <h2 id="subtitleHe">..שיעורי פסנתר בתל אביב.</h2>
-    <br>
-    <p id="subtitle">Personalized lessons for kids & adults</p>
-    <p id="subtitleHeText">שיעורים מותאמים אישית לילדים ומבוגרים</p>
-
-    
-      <div class="buttons">
-        <button class="main-btn" onclick="openWhatsApp()">
-          BOOK A TRIAL LESSON  • הזמן שיעור ניסיון
-        </button>
-        <button class="main-btn" onclick="openWhatsApp()">
-          CONTACT ME  • הצור קשר איתי        
-        </button>
-      
-      
+    <div>
+      <img src="assets/logo.jpg" alt="Firma Logosu" width="100" height="auto" style="border-radius: 50%;" flex-shrink="0">    
     </div>
-  </div>
-</section>
+
+  <nav class="nav ">
+    
+      <a class="nav-button" href="#about">
+        אודות
+        <span>ABOUT</span>
+      </a>
+
+      <a class="nav-button" href="#lessons">
+        שיעורים
+        <span>LESSONS</span>
+      </a>
+
+      <a class="nav-button" href="#reviews">
+        ביקורות
+        <span>REVIEWS</span>
+      </a>
+
+      <a class="nav-button" href="#contact">
+        >צור קשר
+        <span>CONTACT</span>
+      </a>
+  </nav>
+
+  <div class="buttons">
+    <button class="main-btn" onclick="openWhatsApp()">
+    הזמן שיעור ניסיון • BOOK A TRIAL LESSON  
+    </button>
+  </div>  
+</header>
 
 <!-- ABOUT -->
 <section id="about" class="about">
   <div class="about-text">
-    <br>
-    <h2 id="aboutTitle">Hi, I'm Shabi</h2>
-    <h2>היי, אני שבי</h2>
-    <br>
-    <p id="aboutText">
-      Professional pianist and teacher with over 15 years of experience. I believe every student has a unique musical voice, and my goal is to help you discover and express it.
+      <br>
+      <div class="fade"><h1>שיעורי פסנתר עם מורה מקצועי</h1></div> <!--fade-effect-->
+      <div class="fade"><h1>Piano Lessons with Professional Teacher</h1></div>
+      <div class="typing-rtl"><h2>היי, אני שבי</h2></div><!--typing-effect-->
+      <div class="typing"><h2>Hi, I'm Shabi</h2></div>
+      <br>
+      <p> נגן פסנתר ומורה מקצועי עם ניסיון של מעל 15 שנה. אני מאמין שלכל תלמיד יש קול מוזיקלי ייחודי, והמטרה שלי היא לעזור לכם לגלות אותו ולהביע אותו.</p>  
       <br>
       <br>
-      נגן פסנתר ומורה מקצועי עם ניסיון של מעל 15 שנה. אני מאמין שלכל תלמיד יש קול מוזיקלי ייחודי, והמטרה שלי היא לעזור לכם לגלות אותו ולהביע אותו.
-    </p>
-    <br>
+      <p>Professional pianist and teacher with over 15 years of experience. I believe every student has a unique musical voice, and my goal is to help you discover and express it.</p>
+      <br> 
   </div>
 </section>
 
 <!-- LESSONS -->
 <section id="lessons" class="lessons">
-  <h2>Lessons For Every Age</h2>
-  <h2>שיעורים לכל גיל</h2>
+   <h2>שיעורים לכל גיל</h2>
+   <h2>Lessons For Every Age</h2>
   <br>
   <div class="cards">
     <div class="card">
-      <h3>Kids Lessons</h3>
-      <h3>שיעורים לילדים</h3>
-      <p>Fun & engaging lessons</p>
+      <h2>שיעורים לילדים</h2>
+      <h2>Lessons For Kids</h2>
       <p>שיעורים מושרים ומרגשים</p>
+      <p>Fun & engaging lessons</p>
     </div>
-
-   <div class="card">
-      <h3 class="clef">𝄞</h3>
+   <div class="card fade">
+      <h2 class="clef ">𝄞</h2> <!-- clef-effect -->
    </div>
-
-
     <div class="card">
-      <h3>Adults Lessons</h3>
-      <h3>שיעורים dla מבוגרים</h3>
-      <p>Beginner to advanced</p>
+      <h2>שיעורים למבוגרים</h2>
+      <h2>Lessons For Adults</h2>
       <p>מתחילים עד מתקדמים</p>
+      <p>Beginner to advanced</p>      
     </div>
   </div>
 </section>
@@ -139,74 +118,77 @@
 <!-- DENEYIM -->
 
 <section class="features-section">
-    <div class="container">
+    <div class="container reveal"><!-- effect -->
         <!-- Madde 1 -->
-        <div class="feature-item">
+        <div class="feature-item reveal">
             <div class="icon"><i class="fa-solid fa-graduation-cap"></i></div>
-            <h3>15+ Years Experience</h3>
-            <p class="hebrew">מעל 15 שנות ניסיון</p>
-            <p class="desc">Professional training and teaching expertise.</p>
-            <p class="hebrew-desc">ניסיון מקצועי בהוראה והדרכה.</p>
+            <h3>מעל 15 שנות ניסיון</h3>
+            <p>15+ Years Experience</p>
+            <p>ניסיון מקצועי בהוראה והדרכה.</p>
+            <p>Professional training and teaching expertise.</p>
+            
         </div>
 
         <!-- Madde 2 -->
         <div class="feature-item">
             <div class="icon"><i class="fa-regular fa-user"></i></div>
-            <h3>Personalized Approach</h3>
-            <p class="hebrew">גישה אישית</p>
-            <p class="desc">Lessons tailored to your goals and learning style.</p>
-            <p class="hebrew-desc">שיעורים מותאמים למטרות וסגנון הלמידה שלך.</p>
+            <h3>גישה אישית</h3>
+            <p>Personalized Approach</p>
+            <p>שיעורים מותאמים למטרות וסגנון הלמידה שלך.</p>
+            <p>Lessons tailored to your goals and learning style.</p>
         </div>
 
         <!-- Madde 3 -->
         <div class="feature-item">
             <div class="icon"><i class="fa-solid fa-music"></i></div>
-            <h3>Note Reading Focus</h3>
-            <p class="hebrew">דגש על קריאת תווים</p>
-            <p class="desc">Strong foundation in music theory and sight-reading.</p>
-            <p class="hebrew-desc">יסודות חזקים בתיאוריה מוזיקלית וקריאת תווים.</p>
+            <h3>דגש על קריאת תווים</h3>
+            <p>Note Reading Focus</p>
+            <p>יסודות חזקים בתיאוריה מוזיקלית וקריאת תווים.</p>
+            <p>Strong foundation in music theory and sight-reading.</p>
         </div>
 
         <!-- Madde 4 -->
         <div class="feature-item">
-            <div class="icon"><i class="fa-solid fa-keyboard"></i></div>
-            <h3>Modern & Classical</h3>
-            <p class="hebrew">סגנונות מגוונים</p>
-            <p class="desc">From classical to modern, play the music you love.</p>
-            <p class="hebrew-desc">משעשועים ועד מודרני, נגן את המוזיקה שאתה אוהב.</p>
+            <div><i class="fa-solid fa-keyboard"></i></div>
+            <h3>סגנונות מגוונים</h3>
+            <p>Modern & Classical</p>
+            <p>משעשועים ועד מודרני, נגן את המוזיקה שאתה אוהב.</p>
+            <p>From classical to modern, play the music you love.</p>
+            
         </div>
     </div>
 </section>
 
 <!-- cta -->
   <section id="cta" class="cta">
-    <h2>Ready to start your musical journey?</h2>
     <h2>מוכן להתחיל את המסע המוסיקלי שלך?</h2>
+    <h2>Ready to start your musical journey?</h2>
     <br>
     <div class="cards">
       <div class="buttons">
         <button class="main-btn" onclick="openWhatsApp()">
-        BOOK A TRIAL LESSON  • הזמן שיעור ניסיון
+        הזמן שיעור ניסיון• BOOK A TRIAL LESSON   
         </button>
       </div>
       <div class="buttons">
         <button class="main-btn" onclick="openWhatsApp()">
-        WHATSAPP  • וואטסאפ
+          וואטסאפ • WHATSAPP 
         </button>
       </div>
-       <div class="buttons">
-         <a class="main-btn" href="tel:+972523726062">
-          CALL ME • התקשר אליי
+      <div class="buttons">
+        <a href="tel:+972523726062">
+          <button class="main-btn">התקשר אליי • CALL ME</button>
         </a>
-      n</div>
+      </div>
     
     </div>
   </section>
 
 
-<!-- COMMENTS -->
-<section id="gallery" class="comment">
-  <h2>What My Students Say מה אומרים התלמידים שלי</h2> 
+<!-- REVIEWS -->
+<section id="reviews" class="reviews">
+  <h2>מה אומרים התלמידים שלי</h2>
+  <h2>What My Students Say</h2> 
 
  
   <div class="cta">
@@ -220,21 +202,23 @@
 
         <p class="time" id="reviewTime"></p>
 
+        <div class="original" id="reviewOriginal" dir="rtl"></div>
+
         <p class="text" id="reviewText"></p>
 
-        <div class="original" id="reviewOriginal" dir="rtl"></div>    
+         
                       
      </div>
     <br>
-     <a href="https://maps.app.goo.gl/Va5JTXcJv8MMtu4t5?g_st=ic" target="_blank"> ⭐Leave a comment on Google ⭐ השאר תגובה בגוגל⭐</a>
+     <a href="https://maps.app.goo.gl/Va5JTXcJv8MMtu4t5?g_st=ic" target="_blank"> ⭐השאר תגובה בגוגל⭐Leave a comment on Google⭐</a>
   </div>
 </section>
 
 <!-- SOCIAL MEDIA -->
 <section id="contact" class="social-media">
  
-  <h2>Follow Me on Social Media</h2>
   <h2>עקוב אחריי במדיה החברתית</h2>
+  <h2>Follow Me on Social Media</h2>
 
   <br>
 <div class="social-icons">
@@ -255,10 +239,11 @@
 </section>
 
 <footer>
-  <p>&copy; 2023 Pianoshabi. All rights reserved.</p>
+  <p>&copy; 2019 Pianoshabi. All rights reserved.</p>
 </footer>
 
 <script src="script.js"></script>
+
 <!-- BEGIN PLERDY CODE -->
 <script type="text/javascript" defer data-plerdy_code='1'>
     var _protocol="https:"==document.location.protocol?"https://":"http://";
