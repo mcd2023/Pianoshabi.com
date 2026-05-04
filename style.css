@@ -44,8 +44,13 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  border : 5px solid #c8a97e; 
+  side : 5px solid #c8a97e; 
 
+}
+
+logo img {
+  border: 2px solid #c8a97e;
+  border-radius: 10px;
 }
 
 nav {
@@ -291,6 +296,15 @@ nav {
 .cta .main-btn {
   font-size: 20px;
   padding: 15px 30px;
+}
+
+.cta a {
+  background-color: #c8a97e;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.3s;
 }
 
 /* COMMENT */
