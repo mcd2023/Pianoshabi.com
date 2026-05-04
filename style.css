@@ -298,14 +298,7 @@ nav {
   padding: 15px 30px;
 }
 
-.cta a {
-  background-color: #c8a97e;
-  color: white;
-  padding: 12px 25px;
-  border-radius: 30px;
-  text-decoration: none;
-  transition: 0.3s;
-}
+
 
 /* COMMENT */
 
@@ -373,11 +366,9 @@ nav {
 .location {
   font-size: 18px;
   color: black;
-  margin-top: 5px;
-  direction: rtl;
-  unicode-bidi: bidi-override; 
-  
+  margin-top: 5px;  
 }
+  
 
 .time {
   font-size: 14px;
