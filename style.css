@@ -560,6 +560,12 @@ footer {
   opacity: 0.6;
 }
 
+#topBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
 /* RESPONSIVE COMMENTS */
 
 @media (max-width: 900px) {
