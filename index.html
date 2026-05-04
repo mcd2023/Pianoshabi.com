@@ -239,7 +239,7 @@
 </section>
 
 <footer>
-  <p>&copy; 2019 Pianoshabi. All rights reserved.</p>
+  <p>&copy; 2023 Pianoshabi. All rights reserved.</p>
 </footer>
 
 <script src="script.js"></script>
@@ -256,6 +256,14 @@
 </script>
 <!-- END PLERDY CODE -->
 
-<button id="topBtn">↑</button>
+ <!-- buton -->
+  <button id="topBtn">↑</button>
+
+  <!-- asansör  -->
+  <script>
+    document.getElementById("topBtn").addEventListener("click", function () {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  </script>
 </body>
 </html>
