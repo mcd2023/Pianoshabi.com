@@ -103,6 +103,10 @@ header button {
   color: #c8a97e;
 }
 
+logo {
+  display : flex;
+}
+
 /* ========================= BUTTON ========================= */
 
 .main-btn {
@@ -572,6 +576,14 @@ line-height:1.6;
   position: static;
   }
 
+  .nav {
+    display: none;
+  }
+
+  .logo {
+    display: none;
+  }
+
 
   body {
     background-color: #111; /* genel arka plan */
@@ -643,6 +655,14 @@ line-height:1.6;
   header {
   position: static;
   
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .logo {
+    display: none;
   }
 
   body {
