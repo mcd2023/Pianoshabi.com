@@ -541,6 +541,26 @@ footer {
 @media (max-width: 768px) {
 
   header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background: #000; /* şart! yoksa şeffaf olur */
+  }
+
+
+  body {
+    background-color: #111; /* genel arka plan */
+  }
+
+  .about,
+  .lessons,
+  .reviews,
+  .features-section {
+    background-color: #1a1a1a; /* sectionlara ayrı renk */
+    background-image: none; /* varsa arka plan resmini kapatır */
+  }  
+
+  header {
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -601,6 +621,26 @@ footer {
 /* MOBILE */
 @media (max-width: 480px) {
 
+  header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  
+  }
+
+  body {
+    background-color: #111; /* genel arka plan */
+  }
+
+  .about,
+  .lessons,
+  .reviews,
+  .features-section {
+    background-color: #1a1a1a; /* sectionlara ayrı renk */
+    background-image: none; /* varsa arka plan resmini kapatır */
+  }  
+
+  
   h1 {
     font-size: 24px;
   }
@@ -618,8 +658,9 @@ footer {
   }
 
   .main-btn {
-    font-size: 16px;
+    font-size: 14px;
     padding: 12px 20px;
+
   }
 
   .card {
