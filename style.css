@@ -462,12 +462,12 @@ header button {
 
 /* SOCIAL ICONS */
 
+
 .simply_piano {
   width: 40px;   
-  height: 40px;
-  cursor: pointer;
-  transition: 0.3s;
-  object-fit: contain; /* taşmayı önler */
+  min-width: none;
+  
+ 
 }
 
 .simply_piano:hover {
