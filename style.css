@@ -23,6 +23,10 @@ body {
   
 }
 
+section {
+  padding: 8vw 5vw;
+}
+
 /* ========================= STICKY GLASS HEADER ========================= */
 header {
   position: fixed;
