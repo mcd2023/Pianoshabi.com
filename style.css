@@ -666,7 +666,7 @@ line-height:1.6;
   }
 
   .logo {
-    display: none;
+    align-items: center ;
   }
 
   body {
