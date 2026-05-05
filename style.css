@@ -467,12 +467,20 @@ header button {
   width: 40px;   
   min-width: none;
   
+  
  
 }
 
 .simply_piano:hover {
   transform: scale(1.1);
 }
+
+.social-icons {
+  display: flex;
+  align-items: center;   /* dikey ortalar */
+  justify-content: center; /* yatay ortalar */
+  gap: 15px; /* aralık */
+}  
 
 .social-icons a {
   margin: 0 10px;
@@ -484,7 +492,7 @@ header button {
 
 .social-icons a:hover {
   color: #ffffff;
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 /* FOOTER */
