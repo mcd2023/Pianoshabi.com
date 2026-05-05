@@ -164,8 +164,7 @@ header button {
   font-size: 24px;
   color: black;
   white-space: nowrap;
-  overflow: hidden;
-  border-right: 2px solid #c8a97e; /* imleç efekti */
+  overflow: hidden;  
   width: 0;
   animation: typing 4s steps(300, end) forwards, blink 0.2s infinite;
 }
@@ -184,13 +183,9 @@ header button {
 .typing-rtl {
   font-size: 24px;
   color: black;
-
   direction: rtl;              /* 🔥 Hebrew */
   white-space: nowrap;
   overflow: hidden;
-
-  border-left: 2px solid #c8a97e; /* imleç sağda değil solda */
-  
   width: 100%;
   max-width: 0;
 
@@ -246,12 +241,12 @@ header button {
 }
 
 .clef {
-  font-size: 150px;
-  color: white;
-  opacity: 0.5;
-  text-shadow: 0 0 10px rgba(255,255,255,0.6);
-  animation: glow 2s infinite alternate;
+  font-size: 120px;
+  line-height: 1;
+  text-align: center;
+  transform: scale(1);
 }
+
 
 @keyframes glow {
   from {
@@ -454,7 +449,12 @@ header button {
   border-radius: 15px;
   width: 220px;
   transition: 0.3s;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;   /* taşmayı engeller */
+  padding: 20px;
 }
+
 
 .card:hover {
   transform: translateY(-5px);
@@ -576,6 +576,15 @@ line-height:1.6;
   body {
     background-color: #111; /* genel arka plan */
   }
+  .about {
+    color: #ffffff;
+  }
+
+  .about h1,
+  .about h2,
+  .about p {
+    color: #ffffff;
+  }
 
   .about,
   .lessons,
@@ -638,6 +647,16 @@ line-height:1.6;
 
   body {
     background-color: #111; /* genel arka plan */
+  }
+
+  .about {
+    color: #ffffff;
+  }
+
+  .about h1,
+  .about h2,
+  .about p {
+    color: #ffffff;
   }
 
   .about,
