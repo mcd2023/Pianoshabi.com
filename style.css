@@ -629,7 +629,7 @@ footer {
   .reviews,
   .features-section
   .social-media {
-    background-color: #1a1a1a; /* sectionlara ayrı renk */
+    background-color: #1a1a1adc; /* sectionlara ayrı renk */
     background-image: none; /* varsa arka plan resmini kapatır */
   }  
 
