@@ -246,7 +246,7 @@ header button {
   background-position: center;
   background-repeat: no-repeat;
   color: white;
-  padding: 150px 20px;
+  padding: 150px 20px !important;
 }
 
 .clef {
